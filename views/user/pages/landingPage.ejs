@@ -1,252 +1,60 @@
-<style>
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and Font */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #333;
-    color: #fff;
-}
-
-.navbar .logo h1 {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.navbar .nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.navbar .nav-links li {
-    margin-left: 20px;
-}
-
-.navbar .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.navbar .nav-links a:hover {
-    color: #f4b400;
-}
-
-/* Hero Section */
-.hero {
-    background-image: url('/public/images/tour1.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.hero .btn {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #f4b400;
-    color: #333;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.hero .btn:hover {
-    background-color: #f4a400;
-}
-
-/* Tour Packages Section */
-.tour-packages {
-    padding: 60px 40px;
-    text-align: center;
-}
-
-.tour-packages .section-title h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.tour-packages .section-title p {
-    font-size: 1.2rem;
-    margin-bottom: 50px;
-}
-
-.packages-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.package-card {
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    transition: transform 0.3s ease;
-}
-
-.package-card:hover {
-    transform: translateY(-10px);
-}
-
-.package-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.package-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 15px;
-}
-
-.package-card p {
-    font-size: 1rem;
-    margin: 0 15px 20px;
-}
-
-.package-card .btn {
-    background-color: #f4b400;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    width: 100%;
-    text-decoration: none;
-}
-
-.package-card .btn:hover {
-    background-color: #f4a400;
-}
-
-/* About Section */
-.about {
-    background-color: #333;
-    color: #fff;
-    padding: 60px 40px;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 1.2rem;
-    margin-top: 20px;
-}
-
-/* Contact Section */
-.contact {
-    padding: 60px 40px;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.contact p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.contact .btn {
-    background-color: #f4b400;
-    color: #333;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    border: none;
-    text-decoration: none;
-}
-
-.contact .btn:hover {
-    background-color: #f4a400;
-}
-
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 1rem;
-}
-
-
-
-</style>
-<!-- views/landing-page.ejs -->
-<section class="hero" id="home">
+<section class="hero">
     <div class="hero-content">
-        <h1>Explore The World With Our Premium Tour Packages</h1>
-        <p>Discover your dream destination with the best packages tailored for you.</p>
-        <a href="#packages" class="btn">Explore Packages</a>
+        <h2>Welcome To Travel</h2>
+        <h1>Explore  <br>The World</h1>
+        <p>Live the trips exploring the world, discover paradises,<br> islands, mountains and much more, get your trip now.</p>
+        <a href="#" class="btn">Start Your Journey →</a>
+      </div>
+
+  
+    <div class="destinations-grid">
+       
+        <div class="destination-card">
+            <img src="/user/images/EXPLORE.jpg" alt="Italy">
+            <h3> KASHMIR</h3>
+        </div>
+        <div class="destination-card">
+            <img src="/user/images/tour2.jpg" alt="Spain">
+            <h3> DELHI</h3>
+        </div>
+            <div class="destination-card">
+                <img src="/user/images/tour3.jpg" alt="Italdfsy">
+                <h3> KASHMIR</h3>
+
+            </div>
+
+            
+            <div class="destination-card">
+                <img src="/user/images/tour1.jpg" alt="Spaifdgn">
+                <h3> DELHI</h3>
+        </div>
     </div>
 </section>
 
-<!-- Tour Packages Section -->
-<section class="tour-packages" id="packages">
-    <div class="section-title">
-        <h2>Our Best Tour Packages</h2>
-        <p>Choose from a wide variety of premium packages</p>
-    </div>
-    <div class="packages-container">
+
+<section class="second-section ">
+
+
+    <h2 class="packages-heading">"Discover. Explore. Experience <br> Your Next Adventure Awaits!"</h2>
+
+    <div class="packages-grid">
         <div class="package-card">
-            <img src="/public/images/tour1.jpg" alt="Tour Package 1">
-            <h3>Beach Getaway</h3>
-            <p>Relax and unwind on the most beautiful beaches in the world.</p>
-            <a href="#" class="btn">View Package</a>
+            <img src="/user/images/tour1.jpg" alt="Package 1">
+            <h4>Package 1</h4>
+            <p>Details about package 1...</p>
         </div>
         <div class="package-card">
-            <img src="/public/images/tour2.jpg" alt="Tour Package 2">
-            <h3>Mountain Adventure</h3>
-            <p>Embark on a thrilling mountain adventure, perfect for nature lovers.</p>
-            <a href="#" class="btn">View Package</a>
+            <img src="/user/images/tour2.jpg" alt="Package 2">
+            <h4>Package 2</h4>
+            <p>Details about package 2...</p>
         </div>
         <div class="package-card">
-            <img src="/public/images/tour3.jpg" alt="Tour Package 3">
-            <h3>City Exploration</h3>
-            <p>Discover the best cities in the world with our exclusive city tours.</p>
-            <a href="#" class="btn">View Package</a>
+            <img src="/user/images/tour3.jpg" alt="Package 3">
+            <h4>Package 3</h4>
+            <p>Details about package 3...</p>
         </div>
     </div>
+
+    <a href="#" class="view-all-btn">View All Packages</a>
+
 </section>
